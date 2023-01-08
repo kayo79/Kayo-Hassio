@@ -1,3 +1,4 @@
+$ git update-index --chmod=+x rootfs/etc/service.d/my-service/run
 #!/usr/bin/env bashio
 
 mkdir -p /share/snapfifo
