@@ -1,4 +1,4 @@
-name: MPD
+name: MPD2
 version: 1.7.2
 slug: mpd
 panel_icon: mdi:music-circle
@@ -23,7 +23,7 @@ map:
   - media:rw
 ports:
   6680/tcp: null
-  6600/tcp: 6600
+  6600/tcp: 6661
   8000/tcp: null
 ports_description:
   6680/tcp: Web Frontend (Not needed with ingress feature)
@@ -34,6 +34,7 @@ options:
   playlist_folder: /media/mpd/playlists
   volume_normalization: false
   httpd_output: false
+  custom_config: /share/mpd/mpdtts.conf
 schema:
   media_folder: match(/share/.+|/media/.+|(smb|nfs)://.+)
   playlist_folder: match(/share/.+|/media/.+|(smb|nfs)://.+)
