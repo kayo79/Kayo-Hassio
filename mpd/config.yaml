@@ -1,6 +1,6 @@
 name: MPD2
 version: 1.7.2
-slug: mpd
+slug: mpd2
 panel_icon: mdi:music-circle
 description: Music Player Daemon is a free and open source music player. It
   plays audio files, organizes playlists and maintains a music database
